@@ -1,0 +1,23 @@
+.form1{
+    text-align: center;
+    background-color:rgba(33,37,41,255)
+     ;
+}
+
+.visite{
+    text-align: center;
+}
+
+.logo{
+    height: 50px ;
+}
+
+.font1{
+    
+    color: white;
+    font-size: 20px;
+}
+
+.accordion-header{
+    color:grey;
+}
