@@ -1,3 +1,37 @@
-*{
- color: black;
+#div_princ_cad{
+    height: 100vh;
+    background-color: black;
+    background-image: url('/public/delirium.gif');
+    background-size:cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+#div_second_cad{
+    width: 25rem;
+    padding: 50px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 6px grey;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+
+
+#div_but_google{
+    display: flex;
+    justify-content: center;
+}
+
+#but_google{
+    width: 200px;
+}
+
+#div_2but{
+    display: flex;
+    justify-content:space-around;
+}
+
+#but_canCad{
+    width: 120px;
 }

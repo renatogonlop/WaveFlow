@@ -1,5 +1,6 @@
 import "./Faq.css";
 import Accordion from "react-bootstrap/Accordion";
+
 function Faq() {
   return (
     <>
@@ -24,13 +25,6 @@ function Faq() {
       <br></br>
       <div className="container mt-3">
         <h2>MELHORES SOLUÇÕES</h2>
-        {/* <div className="accordion"> */}
-        {/* <div className="card"> */}
-        {/* <div className="card-header">
-              <a className="btn" data-bs-toggle="collapse">
-                Não consigo redefinir a senha
-              </a>
-            </div> */}
 
         <div>
           <Accordion defaultActiveKey="0">
@@ -76,53 +70,8 @@ function Faq() {
             </Accordion.Item>
           </Accordion>
         </div>
-        </div>
-        {/* <div className="collapseOne">
-          <div className="card-body">
-            Redefinição de senha. Insira seu nome de usuário do Spotify ou o
-            e-mail que você usou no cadastro. Nós mandaremos um e-mail com seu
-            nome de usuário e um link para você redefinir sua senha. Se ainda
-            precisa de ajuda, contate o Suporte do Spotify.
-          </div>
-        </div> */}
-        {/* </div> */}
+      </div>
 
-        {/* <div className="card">
-          <div className="card-header">
-            <a className="collapsed btn">Criar ou entrar em um plano Família</a>
-          </div>
-          <div className="collapseTwo" type="collapse">
-            <div className="card-body">
-              O Premium Família é um plano com desconto para até 6 pessoas que
-              moram juntas. Como cada membro do plano usa sua própria conta, não
-              é necessário compartilhar uma senha e todo mundo pode manter suas
-              próprias músicas e playlists salvas.
-              <p>
-                Para mais informações sobre o Plano Família{" "}
-                <a href="">clique aqui</a>.
-              </p>
-            </div>
-          </div>
-        </div> */}
-
-        {/* <div className="card">
-          <div className="card-header">
-            <a className="collapsed btn">
-              Não lembro minhas informações de login
-            </a>
-          </div>
-          <div className="collapseThree">
-            <div className="card-body">
-              Se não se lembrar do seu e-mail ou nome de usuário, acesse a
-              página de redefinição de senha e insira os endereços de e-mail que
-              você pode ter usado para criar uma conta. Quando o endereço
-              registrado no Spotify for inserido, aparecerá uma mensagem dizendo
-              que o e-mail de redefinição de senha foi enviado.
-            </div>
-          </div>
-        </div> */}
-        {/* </div> */}
-      {/* </div> */}
       <div className="container mt-3">
         <table className="table table table-hover">
           <thead>
