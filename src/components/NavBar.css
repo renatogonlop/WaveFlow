@@ -1,3 +1,7 @@
 .d-flex{
     padding-left: 30px;
     }
+
+#logo_link{
+    text-decoration: none;
+}
