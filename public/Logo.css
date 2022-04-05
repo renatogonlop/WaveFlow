@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Ubuntu&display=swap');
+
+.logo_cont{
+    display: flex;
+    height: 100%;
+    border: 1px solid green;
+    justify-content: center;
+    background-image: url("/public/soundbar.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* opacity: .5; */
+}
+
+#nome_cont{
+    border: 2px dotted black;
+    height: 60%;
+    width: 80%;
+    margin: 6%;
+}
+
+
+h1{
+    display: block;
+    color: #f2ffff;
+    text-shadow: 3px 3px 5px black, -3px -2px 5px black;
+    font-family: 'Francois One', sans-serif;
+    font-size: 5vw;
+}

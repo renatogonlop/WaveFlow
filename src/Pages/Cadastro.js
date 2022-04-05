@@ -18,19 +18,19 @@ function Cadastro() {
 
             <form action="">
               <div className="input-group mt-3">
-                <input type="text" className="form-control bg-light btn-outline-secondary" placeholder="Como devemos chamar você?"></input>
+                <input type="text" id='text_active' className="form-control bg-light btn-outline-secondary" placeholder="Como devemos chamar você?"></input>
               </div>
 
               <div className="input-group mt-3">
-                <input type="email" className="form-control bg-light btn-outline-secondary" placeholder="E-mail"></input>
+                <input type="email" id='text_active' className="form-control bg-light btn-outline-secondary" placeholder="E-mail"></input>
               </div>
 
               <div className="input-group mt-3">
-                <input type="email" className="form-control bg-light btn-outline-secondary" placeholder="Confirmar e-mail"></input>
+                <input type="email" id='text_active' className="form-control bg-light btn-outline-secondary" placeholder="Confirmar e-mail"></input>
               </div>
 
               <div className="input-group mt-3">
-                <input type="password" className="form-control bg-light btn-outline-secondary" placeholder="******"></input>
+                <input type="password" id='text_active' className="form-control bg-light btn-outline-secondary" placeholder="Crie uma senha"></input>
               </div>
 
 

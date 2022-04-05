@@ -17,6 +17,10 @@
     border-radius: 20px;
 }
 
+#text_active{
+    color:black;
+}
+
 
 #div_but_google{
     display: flex;
