@@ -17,8 +17,7 @@
 }
 
 .card {
-  --size: 256px;
-  width: var(--size);
+  height: 350px;
   padding: 1rem;
   margin: 10px;
   background-color: var(--color-bg-secondary);
@@ -29,7 +28,7 @@
 }
 
 .card:not(:first-child) {
-  margin-left: -80px;
+  margin-left: -90px;
 }
 
 .card:hover {
@@ -44,8 +43,8 @@
 }
 
 .cover {
-  width: 220px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   position: relative;
   background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
   box-shadow:
@@ -130,4 +129,5 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  width: 300px;
 }

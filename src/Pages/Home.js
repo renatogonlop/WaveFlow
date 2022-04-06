@@ -10,7 +10,9 @@ function Home() {
                 <Carrossel />
             </div>
 
+
             <div id="cont_2">
+                 
                 <Card />
             </div>
         </>
