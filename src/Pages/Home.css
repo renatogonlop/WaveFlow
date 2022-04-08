@@ -1,5 +1,9 @@
 #cont_2{
-    padding-top: 5%;
+    
     background-color: rgba(0, 0, 0, 0.747);
-    height: 500px;
+    height: max-content;
+    display:flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 40px 0px 40px 0px;
 }
