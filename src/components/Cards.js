@@ -58,6 +58,20 @@ function Cards() {
         title__Out: "aaa",
         description: "aaaa",
       },
+      {
+        id: "9",
+        title__In: "a",
+        subtitle: "aa",
+        title__Out: "aaa",
+        description: "aaaa",
+      },
+      {
+        id: "10",
+        title__In: "a",
+        subtitle: "aa",
+        title__Out: "aaa",
+        description: "aaaa",
+      },
   ];
   return props.map((card) => (
     <article className="card">
