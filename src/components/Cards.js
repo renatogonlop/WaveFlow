@@ -1,8 +1,10 @@
 import "../components/css/Cards.css";
+import { Link } from "react-router-dom";
 
 function Cards() {
   const props = [
-    {
+   
+      {
       id: "1",
       image: "pato.png",
       title__In: "Zhu",
@@ -47,17 +49,18 @@ function Cards() {
   ];
   return props.map(
     (card) => (
-      <Link to={`/playlists/${p.id}`}>
+      <Link to={`/playlists/${props.id}`}>
           <article className="card">
             <div className="wrapper">
               <div key={card.id} className="cover">
               <img id="back_capa" src={card.image}/>
                 <div className="cover__text">
-                  <h1 className="cover__title">{card.title__In}</h1>                  <h4 className="cover__subtitle">{card.subtitle}</h4>
+                  <h1 className="cover__title">{card.title__In}</h1>
+                  <h4 className="cover__subtitle">{card.subtitle}</h4>
                 </div>
-              <div className="pb-wrapper">
-                <button className="play-button">Go</button>
-              </div>
+                <div className="pb-wrapper">
+                  <button className="play-button">Go</button>
+                </div>
             </div>
           </div>
         </article>
