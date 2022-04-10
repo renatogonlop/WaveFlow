@@ -43,12 +43,8 @@
 }
 
 .cover {
-  width: 400px;
-<<<<<<< HEAD
+  width: 300px;
   height: 300px;
-=======
-  height: 250px;
->>>>>>> origin/renatogonlop-V.2
   position: relative;
   background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
   box-shadow:
@@ -134,12 +130,9 @@
   display: flex;
   justify-content: center;
   width: 300px;
-<<<<<<< HEAD
-=======
 }
 
 #back_capa{
   width: 200px;
   height: fit-content;
->>>>>>> origin/renatogonlop-V.2
 }

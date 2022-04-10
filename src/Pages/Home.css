@@ -1,16 +1,13 @@
 #cont_2{
     
     background-color: rgba(0, 0, 0, 0.747);
-<<<<<<< HEAD
     height: 600px;
     display:flex;
     flex-flow: wrap;
     justify-content: center;
-=======
     height: max-content;
     display:flex;
     flex-flow: wrap;
     justify-content: center;
     padding: 40px 0px 40px 0px;
->>>>>>> origin/renatogonlop-V.2
 }

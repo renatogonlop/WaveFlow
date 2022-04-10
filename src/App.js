@@ -17,6 +17,7 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="faq" element={<Faq />} />
         <Route path="cadastro" element={<Cadastro/>} />
+        <Route path="/playlist/:id" element={<PlaylistList/>} />
       </Routes>
 
       <Footer />
