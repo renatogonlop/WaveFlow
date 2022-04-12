@@ -1,26 +1,43 @@
 import "./Cadastro.css";
 import { useState } from "react";
 
+
+
+
 function Cadastro() {
+  
   const [nome, setNome] = useState("");
   const [senha, setSenha] = useState("");
   const [email, setEmail] = useState("");
   const [emailConfirmacao, setEmailConfirmacao] = useState("");
 
+  const usuario = {
+    nome,
+    senha,
+    email,
+    emailConfirmacao,
+  };
+
   function handleSubmit(e) {
     e.preventDefault();
 
-    const usuario = {
-      nome,
-      senha,
-      email,
-      emailConfirmacao,
-    };
     console.log(usuario);
   }
 
+  function handleValidacao(e) {
+    e.preventDefault();
+    if(usuario.email !== usuario.emailConfirmacao && usuario.email !== "" && usuario.emailConfirmacao !==""){
+      alert("teste");
+      /* const teste = this.ref.teste; */
+      /* teste.disabled; */
+
+    }
+  }
+
+  
+
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
+    <form onSubmit={(e) => handleSubmit(e)} >
       <div className="container-fluid h-100">
         <div
           id="div_princ_cad"
@@ -77,6 +94,8 @@ function Cadastro() {
                 id="text_active"
                 className="form-control bg-light btn-outline-secondary"
                 placeholder="Confirmar e-mail"
+                onBlur={(e) =>handleValidacao(e)}
+                
               ></input>
             </div>
 
@@ -174,6 +193,7 @@ function Cadastro() {
             <div id="div_2but">
               <div>
                 <button
+                  ref = "teste"
                   id="but_inscrever"
                   type="submit"
                   className="btn btn-primary btn-success mt-4"
