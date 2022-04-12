@@ -1,16 +1,15 @@
 import "./Cadastro.css";
 import { useState } from "react";
-
-
-
+import React from "react";
 
 function Cadastro() {
-  
-  const [nome, setNome] = useState("");
-  const [senha, setSenha] = useState("");
-  const [email, setEmail] = useState("");
-  const [emailConfirmacao, setEmailConfirmacao] = useState("");
+  var [nome, setNome] = useState("");
+  var [senha, setSenha] = useState("");
+  var [email, setEmail] = useState("");
+  var [emailConfirmacao, setEmailConfirmacao] = useState("");
+  var [disable, setDisable] = React.useState(false);
 
+  var boolean = true;
   const usuario = {
     nome,
     senha,
@@ -21,23 +20,36 @@ function Cadastro() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(usuario);
+    if (usuario.email !== usuario.emailConfirmacao) {
+      setDisable(true);
+    }
+    if (usuario.email === usuario.emailConfirmacao) {
+      alert("cadastro realizado com sucesso");
+
+      setDisable(false);
+      e.target.reset();
+    }
+    return console.log(usuario);
   }
 
   function handleValidacao(e) {
     e.preventDefault();
-    if(usuario.email !== usuario.emailConfirmacao && usuario.email !== "" && usuario.emailConfirmacao !==""){
+    if (
+      usuario.email !== usuario.emailConfirmacao &&
+      usuario.email !== "" &&
+      usuario.emailConfirmacao !== ""
+    ) {
       alert("teste");
       /* const teste = this.ref.teste; */
       /* teste.disabled; */
-
+      setDisable(true);
+    } else {
+      setDisable(false);
     }
   }
 
-  
-
   return (
-    <form onSubmit={(e) => handleSubmit(e)} >
+    <form onSubmit={(e) => handleSubmit(e)}>
       <div className="container-fluid h-100">
         <div
           id="div_princ_cad"
@@ -94,8 +106,7 @@ function Cadastro() {
                 id="text_active"
                 className="form-control bg-light btn-outline-secondary"
                 placeholder="Confirmar e-mail"
-                onBlur={(e) =>handleValidacao(e)}
-                
+                onBlur={(e) => handleValidacao(e)}
               ></input>
             </div>
 
@@ -193,7 +204,7 @@ function Cadastro() {
             <div id="div_2but">
               <div>
                 <button
-                  ref = "teste"
+                  disabled={disable}
                   id="but_inscrever"
                   type="submit"
                   className="btn btn-primary btn-success mt-4"
