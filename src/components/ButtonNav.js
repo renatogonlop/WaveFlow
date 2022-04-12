@@ -1,10 +1,11 @@
 
 import "../components/css/ButtonNav.css";
+import { Link } from "react-router-dom";
 
 function ButtonNav (){
     return(
         <div className="container">
-            <div className="btn"><a href="home">Buscar</a></div>
+             <Link to="/home" className="nav-link">Buscar</Link>
         </div>
     )
 }

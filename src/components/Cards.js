@@ -1,4 +1,5 @@
 import "../components/css/Cards.css";
+import { Link } from "react-router-dom";
 
 function Cards() {
   const props = [
@@ -74,19 +75,20 @@ function Cards() {
       },
   ];
   return props.map((card) => (
-    <article className="card">
+    <Link to={`playlist/${card.id}`} className="card" >
       <div className="wrapper">
         <div key={card.id} className="cover">
           <div className="cover__text">
             <h1 className="cover__title">{card.title__In}</h1>
             <h4 className="cover__subtitle">{card.subtitle}</h4>
           </div>
+         
           <div className="pb-wrapper">
             <button className="play-button">Go</button>
           </div>
         </div>
       </div>
-    </article>
+    </Link>
   ));
 }
 
