@@ -25,6 +25,7 @@
   box-shadow: -.5rem 1rem 1rem rgba(0, 0, 0, 0.8  );
   cursor: pointer;
   transition: background 320ms;
+  justify-content: space-around;
 }
 
 .card:not(:first-child) {
@@ -45,22 +46,24 @@
 .cover {
   width: 300px;
   height: 300px;
+  
   position: relative;
   background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
   box-shadow:
       0 4px 16px rgba(0, 0, 0, 0.4),
       0 8px 18px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
+
+   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; 
   ;
 }
 
 .cover__text {
+  padding-top: 100px;
   text-align: center;
-  display: flex;
+  display:inline-flex;
   flex-direction: column;
   opacity: 0.8;
   transform: translateY(-1rem);
@@ -79,12 +82,18 @@
 .cover__title {
   font-size: 2.4rem;
   font-weight: 900;
+
+  
 }
 
 .cover__subtitle {
+  padding-right: 10px;
+  margin-left: 40px;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
   order: 1;
+  display: inline-block;
 }
 
 .pb-wrapper {
@@ -133,6 +142,8 @@
 }
 
 #back_capa{
-  width: 200px;
+  
+  width: 300px;
+  height: 300px;
   height: fit-content;
 }
