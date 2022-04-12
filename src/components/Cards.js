@@ -6,45 +6,58 @@ function Cards() {
    
       {
       id: "1",
-      image: "pato.png",
+      image: "zhu-ringosdesert.png",
       title__In: "Zhu",
       subtitle: "Ringos Desert"
     },
     {
       id: "2",
       title__In: "Zhu",
+      image: "zhu-ringosdesert.png",
       subtitle: "Generationwhy"
     },
     {
       id: "3",
       title__In: "Zhu",
+      image: "zhu-ringosdesert.png",
       subtitle: "Genesis Series"
 
     },
     {
       id: "4",
       title__In: "Zhu",
+      image: "zhu-ringosdesert.png",
       subtitle: "The Nightday"
     },
     {
       id: "5",
       title__In: "Aurora",
+      image: "zhu-ringosdesert.png",
       subtitle: "Running with the Wolves"
     },
     {
         id: "6",
         title__In: "Aurora",
+        image: "zhu-ringosdesert.png",
         subtitle: "All My Demons Greeting Me as a Friend"
       },
       {
         id: "7",
         title__In: "Aurora",
+        image: "zhu-ringosdesert.png",
         subtitle: "Wolfwalkers"
       },
       {
         id: "8",
         title__In: "Aurora",
+        image: "zhu-ringosdesert.png",
         subtitle: "The Gods We Can Touch"
+      },
+      {
+        id: "1",
+        image: "zhu-ringosdesert.png",
+        title__In: "Zhu",
+        subtitle: "Ringos Desert"
       }
   ];
   return props.map(
@@ -53,11 +66,11 @@ function Cards() {
           <article className="card">
             <div className="wrapper">
               <div key={card.id} className="cover">
-              <img id="back_capa" src={card.image}/>
-                <div className="cover__text">
+               <img id="back_capa" src={card.image}/>
+               {/*  <div className="cover__text">
                   <h1 className="cover__title">{card.title__In}</h1>
                   <h4 className="cover__subtitle">{card.subtitle}</h4>
-                </div>
+                </div> */}
                 <div className="pb-wrapper">
                   <button className="play-button">Go</button>
                 </div>
