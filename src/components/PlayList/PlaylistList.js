@@ -14,7 +14,7 @@ function PlaylistList() {
             return(
               <li>
                 <Link to={`/playlists/${playDados.id}`}>
-                    <img className="item" src={playDados.capa} alt="Capa do álbum"/>
+                    <img className="item" src={playDados.image} alt="Capa do álbum"/>
                 </Link>
               </li>
             )

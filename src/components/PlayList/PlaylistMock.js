@@ -2,7 +2,7 @@ const PlaylistMock = [
    
     {
     id: "1",
-    image: "Capa/zhu-ringosdesert.png",
+    image: "/Capa/zhu-ringosdesert.png",
     title__In: "Zhu",
     subtitle: "Ringos Desert",
     musicas:[
@@ -35,7 +35,7 @@ const PlaylistMock = [
   {
     id: "2",
     title__In: "Zhu",
-    image: "Capa/zhu-Generationwhy.png",
+    image: "/Capa/zhu-Generationwhy.png",
     subtitle: "Generationwhy",
     musicas:[
       {
@@ -67,7 +67,7 @@ const PlaylistMock = [
   {
     id: "3",
     title__In: "Zhu",
-    image: "Capa/zhu-GenesisSeries.jpg",
+    image: "/Capa/zhu-GenesisSeries.jpg",
     subtitle: "Genesis Series",
     musicas:[
       {
@@ -99,7 +99,7 @@ const PlaylistMock = [
   {
     id: "4",
     title__In: "Zhu",
-    image: "Capa/zhu-TheNightday.jpg",
+    image: "/Capa/zhu-TheNightday.jpg",
     subtitle: "The Nightday",
     musicas:[
       {
@@ -131,7 +131,7 @@ const PlaylistMock = [
   {
     id: "5",
     title__In: "Aurora",
-    image: "Capa/aurora-RunningwiththeWolves.png",
+    image: "/Capa/aurora-RunningwiththeWolves.png",
     subtitle: "Running with the Wolves",
     musicas:[
       {
@@ -163,7 +163,7 @@ const PlaylistMock = [
   {
       id: "6",
       title__In: "Aurora",
-      image: "Capa/aurora-llMyDemonsGreetingMeasaFriend.webp",
+      image: "/Capa/aurora-llMyDemonsGreetingMeasaFriend.webp",
       subtitle: "All My Demons Greeting Me as a Friend",
       musicas:[
         {
@@ -195,7 +195,7 @@ const PlaylistMock = [
     {
       id: "7",
       title__In: "Aurora",
-      image: "Capa/aurora-Wolfwalkers.png",
+      image: "/Capa/aurora-Wolfwalkers.png",
       subtitle: "Wolfwalkers",
       musicas:[
         {
@@ -227,7 +227,7 @@ const PlaylistMock = [
     {
       id: "8",
       title__In: "Aurora",
-      image: "Capa/aurora-The Gods We Can Touch.png",
+      image: "/Capa/aurora-The Gods We Can Touch.png",
       subtitle: "The Gods We Can Touch",
       musicas:[
         {
@@ -259,7 +259,7 @@ const PlaylistMock = [
     {
       id: "9",
       title__In: "Zhu",
-      image: "Capa/aurora-InfectionsofaDifferentKind.webp",
+      image: "/Capa/aurora-InfectionsofaDifferentKind.webp",
       subtitle: "Ringos Desert",
       musicas:[
         {
