@@ -12,6 +12,7 @@ function Home() {
 
 
             <div id="cont_2">
+                 
                 <Card />
             </div>
         </>

@@ -17,8 +17,8 @@
     border-radius: 20px;
 }
 
-#text_active{
-    color:black;
+#formGlobal{
+    color:black !important;
 }
 
 
@@ -67,4 +67,8 @@
 
 #mes_box{
     width: 4rem;
+}
+
+.btn-outline-secondary{
+    color: black !important;
 }
