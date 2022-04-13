@@ -23,7 +23,7 @@ function Cadastro() {
     if (usuario.email !== usuario.emailConfirmacao) {
       setDisable(true);
     }
-    if (usuario.email === usuario.emailConfirmacao) {
+    if (usuario.email === usuario.emailConfirmacao && usuario.email !== "" && usuario.email !== "") {
       alert("cadastro realizado com sucesso");
 
       setDisable(false);
@@ -39,9 +39,8 @@ function Cadastro() {
       usuario.email !== "" &&
       usuario.emailConfirmacao !== ""
     ) {
-      alert("teste");
-      /* const teste = this.ref.teste; */
-      /* teste.disabled; */
+      alert("Email diferentes inseridos, por favor preencher novamente");
+ 
       setDisable(true);
     } else {
       setDisable(false);
