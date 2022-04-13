@@ -1,0 +1,149 @@
+:root {
+  --color-bg-primary: #131313;
+  --color-bg-secondary: #171717;
+  --color-grad-bottom: #132E56;
+  --color-grad-top: #00716a;
+  --color-green-accent: #00B255;
+  --color-text-primary: #ffffff;
+  --color-text-muted: #AAAAAA;
+}
+
+.watermark {
+  width: 18px;
+  position:absolute;
+  left: 1rem;
+  top: 1rem;
+  opacity: 0.5;
+}
+
+.card {
+  height: 350px;
+  padding: 1rem;
+  margin: 10px;
+  background-color: var(--color-bg-secondary);
+  border-radius: 0.5rem;
+  box-shadow: -.5rem 1rem 1rem rgba(0, 0, 0, 0.8  );
+  cursor: pointer;
+  transition: background 320ms;
+  justify-content: space-around;
+}
+
+.card:not(:first-child) {
+  margin-left: -90px;
+}
+
+.card:hover {
+  background: #242424;
+  transform: translateY(-20px);
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.cover {
+  width: 300px;
+  height: 300px;
+  
+  position: relative;
+  background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+  box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.4),
+      0 8px 18px rgba(0, 0, 0, 0.2);
+
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; 
+  ;
+}
+
+.cover__text {
+  padding-top: 100px;
+  text-align: center;
+  display:inline-flex;
+  flex-direction: column;
+  opacity: 0.8;
+  transform: translateY(-1rem);
+}
+
+.cover__text::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 1px;
+  opacity: 0.4;
+  margin: 1rem 0;
+}
+
+.cover__title {
+  font-size: 2.4rem;
+  font-weight: 900;
+
+  
+}
+
+.cover__subtitle {
+  padding-right: 10px;
+  margin-left: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  order: 1;
+  display: inline-block;
+}
+
+.pb-wrapper {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: 
+      transform 2320ms,
+      opacity 320ms;
+}
+
+.card:hover .pb-wrapper {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.play-button {
+  width: 40px;
+  height: 40px;
+  color: white;
+  background: var(--color-green-accent);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.0rem;
+  box-shadow: 0 8px 8px rgb(0, 0, 0, 0.3);
+}
+
+.pl-name {
+  font-size: 1rem;
+  margin-bottom: .4rem;
+  color: white;
+}
+
+.pl-about {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+
+#back_capa{
+  
+  width: 300px;
+  height: 300px;
+  height: fit-content;
+}

@@ -1,5 +1,6 @@
 import { getCurrentDate } from '../utils/CurrentDate';
-import './Footer.css'
+import '../components/css/Footer.css'
+import ButtonFooter from './ButtonFooter';
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-sm-3">
-            <h2 className="logo"><a href="-"> Wave Flow </a></h2>
+            <h2 className="logo">Wave Flow</h2>
           </div>
           <div className="col-sm-2">
             <h5>EMPRESA</h5>
@@ -40,7 +41,9 @@ function Footer() {
               <i className="fa fa-facebook"></i>
               <i className="fa fa-instagram"></i>
             </div>
-            <button className="button btn btn-default">Contato</button>
+
+            <ButtonFooter />
+
           </div>
         </div>
       </div>

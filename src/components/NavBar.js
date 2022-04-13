@@ -1,35 +1,35 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import './NavBar.css'
-import Logo from './logo'
+import '../components/css/NavBar.css';
+import Logo from './logo';
+import ButtonNav from './ButtonNav';
+
 
 const navbar = () => {
     return (
-        <div className="navbar navbar-dark bg-dark">
-            <a id='logo_link' href='.'><Logo /></a>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                        <span class="navbar-toggler-icon"></span>
+        <div className="container__Nav">
+            <Logo />
+            <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div className="container__Nav__in">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="mynavbar">
-
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
+                    <div className="collapse navbar-collapse" id="mynavbar">
+                        <ul className="navbar-nav me-auto">
+                            <li className="nav-item d-flex">
                                 <Link to="/home" className="nav-link">Home</Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item d-flex">
                                 <Link to="/faq" className="nav-link">Faq</Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item d-flex">
                                 <Link to="/cadastro" className="nav-link">Cadastro</Link>
                             </li>
 
                         </ul>
-
-                        <form class="d-flex">
-                            <input className="form-control me-2" type="text" placeholder="Artistas ou músicas"></input>
-                            <button class="btn btn-primary btn-success" type="button">Buscar</button>
+                        <form className="d-flex">
+                            <input className="me-1 d-flex" type="text" placeholder="Artistas ou músicas"></input>
+                                <ButtonNav />
                         </form>
                     </div>
                 </div>

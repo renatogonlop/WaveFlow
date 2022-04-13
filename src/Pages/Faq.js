@@ -1,28 +1,32 @@
 import "./Faq.css";
 import Accordion from "react-bootstrap/Accordion";
+import "../components/css/Button.css"
 
 function Faq() {
   return (
     <>
-      <div className="container p-5 my-5 bg-dark text-white">
+      <div className="p-5 my-5 bg-dark text-white">
         <h1 className="form1">Como podemos ajudar?</h1>
+
         <p className="form1">
           Descreva sua dúvida, na caixa de dialogo abaixo, quando digitar vai
           aparecer opções para facilitar na busca pelo que procura.
         </p>
-        <form className="d-flex">
-          <input
-            className="form-control me-2"
-            type="text"
-            placeholder="Escreva sua dúvida"
-          ></input>
-          <button className="btn btn-primary btn-success" type="button">
-            Buscar
-          </button>
-        </form>
+
+        <input
+          id="inputfaq" className="form-control"
+          type="text"
+          placeholder="Escreva sua dúvida"
+        />
+
+        <div className="container buttondiv1">
+          <div className="btn"><a href="home">Buscar</a></div>
+        </div>
       </div>
-      <br></br>
-      <br></br>
+
+      <br />
+      <br />
+
       <div className="container mt-3">
         <h2>MELHORES SOLUÇÕES</h2>
 
@@ -102,7 +106,9 @@ function Faq() {
           </tbody>
         </table>
       </div>
-      <div className="container p-5 my-5 bg-dark text-white">
+
+
+      <div className="p-5 my-5 bg-dark text-white">
         <h1 className="visite">Visite a Comunidade</h1>
         <p className="visite">
           Tem uma pergunta? Encontre Respostas na nossa Comunidade de fãs
@@ -110,12 +116,13 @@ function Faq() {
         </p>
 
         <div className="d-grid">
-          <button className="button btn btn-primary btn-block btn-success">
+          <button id="inputfaq" className="button btn btn-primary btn-block btn-success">
             Encontrar respostas
           </button>
         </div>
       </div>
-      )
+
+
     </>
   );
 }

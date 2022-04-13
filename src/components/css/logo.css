@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Ubuntu&display=swap');
+
+.logo_cont{
+    display: inline-flex;
+    width: 245px;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.nome-navbar{
+    color: rgb(242, 255, 255);
+    text-shadow: 3px 3px 5px black, -3px -2px 5px black;
+    font-family: 'Francois One', sans-serif;
+    font-size: 2rem;
+    align-self: center;
+    margin-left: -75%;
+    order: 2;
+}
+
+.logo{
+    height: 60px;
+    opacity: .5;
+}
