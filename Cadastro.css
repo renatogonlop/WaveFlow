@@ -1,0 +1,74 @@
+#div_princ_cad{
+    height: 120vh;
+    background-color: black;
+    background-image: url('/public/delirium.gif');
+    background-size:cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+#div_second_cad{
+    width: 27rem;
+    padding: 50px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 6px grey;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+
+#formGlobal{
+    color:black !important;
+}
+
+
+#div_but_google{
+    display: flex;
+    justify-content: center;
+}
+
+#but_google{
+    width: 200px;
+}
+
+#div_2but{
+    display: flex;
+    justify-content:space-around;
+}
+
+#but_inscrever{
+    width: 180px;
+}
+
+#radio_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#radio1:checked, #radio2:checked, #radio3:checked{
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+#radio1:focus, #radio2:focus, #radio3:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #5cb85c5b;
+}
+
+#data_cont{
+    padding: 0;
+}
+
+#data_box{
+    width: 1rem;
+    text-align: center;
+}
+
+#mes_box{
+    width: 4rem;
+}
+
+.btn-outline-secondary{
+    color: black !important;
+}
