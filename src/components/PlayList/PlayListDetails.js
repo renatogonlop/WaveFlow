@@ -8,7 +8,7 @@ function PlayListDetails(props) {
   const [playListDetails, setPlayListDetails] = useState({musicas: []});
   const { id } = useParams();
 
-  //objeto ou array
+  
   useEffect( () => {
     const baseURL = `http://localhost:4000/Playlist/${id}`;
     // Simple GET request using axios
@@ -17,11 +17,8 @@ function PlayListDetails(props) {
       .then((response) => setPlayListDetails(response.data));
   }, [id]);
 
-  
-
-  //"variável" para encontrar a playlist pelo id
     
-    //"variável" para listar as músicas encontradas no vetor musicas da playlist
+ 
     const musicas = playListDetails.musicas.map((playDados) => {
       return (
         <li className="lista">
