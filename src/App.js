@@ -7,13 +7,15 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
-import PlaylistDetail from "./components/PlayList/PlayListDetails";
-import PlaylistList from "./components/PlayList/PlaylistList";
+import PlayListDetails from "./components/PlayList/PlayListDetails";
+import {PlayListList} from "./components/PlayList/PlayListList";
 
 
 function App() {
+  
   return (
     <>
+    
       <NavBar />
 
       <Routes>
@@ -22,8 +24,8 @@ function App() {
         <Route path="faq" element={<Faq />} />
         <Route path="cadastro" element={<Cadastro/>} />
         <Route path="NotFoundPage" element={<NotFoundPage/>} />
-        <Route path="/play" element={<PlaylistList/>} />
-        <Route path="/playlists/:id" element={<PlaylistDetail/>} />
+        <Route path="/play" element={<PlayListList/>} />
+        <Route path="/playlists/:id" element={<PlayListDetails/>} />
       </Routes>
 
       <Footer />
