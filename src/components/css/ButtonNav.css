@@ -28,11 +28,8 @@
     backdrop-filter: blur(15px);
 }
 
-.container .btn:hover a {
-    letter-spacing: 3px;
-}
 
-.container .btn a::before {
+/* .container .btn a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -42,21 +39,21 @@
     background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
     transform: skewX(45deg) translateY(0);
     transition: 0.5s;
-}
+} */
 
-.container .btn:hover a::before {
+/* .container .btn:hover a::before {
     transform: skewX(45deg) translateX(200%);
-}
+} */
 
 .container .btn::before {
     content: '';
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -5px;
+    bottom: 0px;
     width: 30px;
     height: 10px;
-    background: #f00;
+    background: #1eff45;
     border-radius: 10px;
     transition: 0.5s;
     transition-delay: 0.5s;
@@ -75,10 +72,10 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -5px;
+    top: 0px;
     width: 30px;
     height: 10px;
-    background: #f00;
+    background: #1eff45;
     border-radius: 10px;
     transition: 0.5s;
     transition-delay: 0.5s;
@@ -93,7 +90,7 @@
 }
 
 /*CORES DO EFEITO*/
-.container .btn:nth-child(1)::before,
+/* .container .btn:nth-child(1)::before,
 .container .btn:nth-child(1)::after {
     background: #1eff45;
     box-shadow: 
@@ -101,4 +98,4 @@
         0 0 4px #1eff45,
         0 0 8px #1eff45,
         0 0 16px #1eff45;
-}
+} */

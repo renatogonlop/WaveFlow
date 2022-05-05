@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import '../components/css/NavBar.css';
+import '../components/css/ButtonLogin.css';
 import Logo from './logo';
 import ButtonNav from './ButtonNav';
 
@@ -28,8 +29,13 @@ const navbar = () => {
 
                         </ul>
                         <form className="d-flex">
-                            <input className="me-1 d-flex" type="text" placeholder="Artistas ou músicas"></input>
-                                <ButtonNav />
+                            {/* <input className="me-1 d-flex" type="text" placeholder="Artistas ou músicas"></input> */}
+                            <ButtonNav />
+
+                            <div className="contn">
+                                <div className="btn2"><Link to="/Busca">Login</Link></div>
+                            </div>
+
                         </form>
                     </div>
                 </div>

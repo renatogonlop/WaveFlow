@@ -1,16 +1,10 @@
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container .btn {
+.contn .btn2 {
     position: relative;
     width: 155px;
     height: 50px;
 }
 
-.container .btn a {
+.contn .btn2 a {
     position: absolute;
     top: 0;
     left: 0;
@@ -34,41 +28,22 @@
     backdrop-filter: blur(15px);
 }
 
-/* .container .btn:hover a {
-    letter-spacing: 3px;
-} */
 
-/* .container .btn a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
-    transform: skewX(45deg) translateY(0);
-    transition: 0.5s;
-} */
-
-/* .container .btn:hover a::before {
-    transform: skewX(45deg) translateX(200%);
-} */
-
-.container .btn::before {
+.contn .btn2::before {
     content: '';
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0px;
-    width: 30px;
-    height: 10px;
-    background:  #1eff45;
+    width: 60px;
+    height: 15px;
+    background: #1eff45;
     border-radius: 10px;
     transition: 0.5s;
     transition-delay: 0.5s;
 }
 
-.container .btn:hover::before {
+.contn .btn2:hover::before {
     bottom: 0;
     height: 50%;
     width: 80%;
@@ -76,35 +51,25 @@
     transition-delay: 0s;
 }
 
-.container .btn::after {
+/* Topo da animação do botão */
+/* .contn .btn2::after {
     content: '';
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 0px;
+    top: -5px;
     width: 30px;
     height: 10px;
-    background:  #1eff45;
+    background: #f00;
     border-radius: 10px;
     transition: 0.5s;
     transition-delay: 0.5s;
-}
+} */
 
-.container .btn:hover::after {
+/* .contn .btn2:hover::after {
     top: 0;
     height: 50%;
     width: 80%;
     border-radius: 30px;
     transition-delay: 0s;
-}
-
-/*CORES DO EFEITO*/
-.container .btn:nth-child(1)::before,
-.container .btn:nth-child(1)::after {
-    background: #1eff45;
-    box-shadow: 
-        0 0 2px #1eff45,
-        0 0 4px #1eff45,
-        0 0 8px #1eff45,
-        0 0 16px #1eff45;
-}
+} */

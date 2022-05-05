@@ -1,6 +1,6 @@
 import "./Home.css";
 import Carrossel from '../components/carrossel';
-import Card from '../components/Cards'
+import {Cards} from '../components/Cards'
 
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
 
             <div id="cont_2">
                  
-                <Card />
+                <Cards />
             </div>
         </>
     )
