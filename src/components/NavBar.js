@@ -6,7 +6,10 @@ import Logo from './logo';
 import ButtonNav from './ButtonNav';
 
 
+
+
 const navbar = () => {
+
     return (
         <div className="container__Nav">
             <Logo />
@@ -33,15 +36,31 @@ const navbar = () => {
                             <ButtonNav />
 
                             <div className="contn">
-                                <div className="btn2"><Link to="/Busca">Login</Link></div>
+                                <div className="btn2">
+                                    <Link to="/Signin" refresh>
+                                        <button
+                                            style={{
+                                                decoration: 'none',
+                                                textDecoration: 'none',
+                                                backgroundColor: 'transparent',
+                                                border: 'none',
+                                                width: '100px',
+                                                color: 'rgb(255, 255, 255)',
+                                                fontweight: '400',
+                                            }}
+                                            type="submit"
+                                        >Login
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
 
                         </form>
                     </div>
-                </div>
-            </nav>
+                </div >
+            </nav >
 
-        </div>
+        </div >
     );
 }
 

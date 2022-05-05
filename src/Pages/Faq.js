@@ -4,7 +4,7 @@ import "../components/css/Button.css"
 
 function Faq() {
   return (
-    <>
+    <div className="fundo_faq">
       <div className="p-5 my-5 bg-dark text-white">
         <h1 className="form1">Como podemos ajudar?</h1>
 
@@ -123,7 +123,7 @@ function Faq() {
       </div>
 
 
-    </>
+    </div>
   );
 }
 export default Faq;
