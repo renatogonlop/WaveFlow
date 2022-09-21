@@ -1,3 +1,7 @@
+pt-br > Projeto da Universidade - Hotsite de Musica inpirado no Spotify<br>
+en-us > University Project - Music Hotsite inspired by Spotify
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
